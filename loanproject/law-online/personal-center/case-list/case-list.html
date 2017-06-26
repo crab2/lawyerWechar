@@ -1,0 +1,54 @@
+
+<ion-tabs class="tabs-default tabs-icon-only" >
+    <ion-tab title="全部"  >
+        <div>
+            <div class="card">
+                <div class="item item-divider">
+                    离婚纠纷
+                    <button class="button button-outline button-positive button-small" style="float:right;">待审核</button>
+                </div>
+                <div class="item">
+                    李四
+                    <p>电话：19854548452</p>
+                </div>
+                <p class="item">
+                    广东省-广东市
+                    <span style="float:right;">
+                        100元-500元
+                    </span>
+                </p>
+                <!--            <div class="item item-text-wrap">
+                                This is a basic Card with some text.
+                            </div>-->
+                <div class="item item-divider text-right">
+                    <button class="button button-small button-calm"  ng-click="caseListmodal.show()">查看详情</button>
+                </div>
+            </div>
+        </div>
+    </ion-tab>
+
+    <ion-tab title="待付款"  >
+        <!-- 标签 2 内容 -->
+    </ion-tab>
+
+    <ion-tab title="待处理"  >
+        <!-- 标签 3 内容 -->
+    </ion-tab>
+
+    <ion-tab title="已完成"  >
+        <!-- 标签 3 内容 -->
+    </ion-tab>
+
+</ion-tabs>
+<div class="bar bar-footer">
+    <!--<button class="button button-clear">Left</button>-->
+    <div class="title" ng-click="releasemodal.show()">发布案件</div>
+    <!--<button class="button button-clear">Right</button>-->
+</div>
+
+<style>
+    .tab-nav{
+        top:auto !important;
+        bottom: 43px !important;
+    }
+</style>

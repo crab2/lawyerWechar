@@ -1,0 +1,115 @@
+<html ng-app="lawOnline">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>法律在线</title>
+    <link href="../ionic-v1-master/ionic-v1-master/release/css/ionic.min.css" rel="stylesheet">
+    <script src="../ionic-v1-master/ionic-v1-master/release/js/ionic.bundle.js"></script>
+    <script src="law-online.js"></script>
+    <script src="law-online-router.js"></script>
+
+
+    <!--图标文件-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_9bs65ipcngg5jyvi.css">
+    <style>
+        body {
+            cursor: url('http://www.runoob.com/static/img/finger.png'), auto;
+        }
+    </style>
+</head>
+<body ng-controller="MyCtrl">
+
+<ion-header-bar class="bar-positive" align-title="center">
+    <h1 class="title">法律在线</h1>
+    <div class="buttons">
+        <button class="button" ng-click="toggleRight()">
+            <i class="ion-gear-b icon"></i>
+            设置</button>
+    </div>
+</ion-header-bar>
+<ion-content>
+    <!--侧栏-->
+    <ion-side-menus>
+        <!-- 中间内容 -->
+        <ion-side-menu-content >
+            <ui-view></ui-view>
+        </ion-side-menu-content>
+
+        <!-- 左侧菜单 -->
+        <ion-side-menu side="left">
+        </ion-side-menu>
+
+        <!-- 右侧菜单 -->
+        <ion-side-menu side="right">
+            <div class="list">
+                <div class="item item-divider">
+                    网站导航
+                </div>
+                <a class="item" >
+                    <i class="ion ion-help"></i>
+                    预约咨询
+                </a>
+                <a class="item" >
+                    <i class="ion ion-share"></i>
+                    精选分享
+                </a>
+
+                <a class="item" menu-close ui-sref="personalCenter">
+                    <i class="ion ion-help-buoy"></i>
+                    产品服务
+                </a>
+
+                <a class="item" menu-close ui-sref="personalCenter">
+                    <i class="ion ion-wrench"></i>
+                    查询助手
+                </a>
+
+                <div class="item item-divider">
+                    <i class="ion ion-navicon-round"></i>
+                    会员导航
+                </div>
+
+                <a class="item" menu-close ui-sref="personalCenter.personalLogin">
+                    <i class="ion ion-log-in"></i>
+                    登陆（个人用户）
+                </a>
+
+                <a class="item" menu-close ui-sref="personalCenter.personalRegist">
+                    <i class="ion ion-ios-book"></i>
+                    注册（个人用户）
+                </a>
+                <a class="item" menu-close ui-sref="personalCenter.personalLogin">
+                    <i class="ion ion-log-in"></i>
+                    登陆（律师）
+                </a>
+
+                <a class="item" menu-close ui-sref="personalCenter.personalRegist">
+                    <i class="ion ion-ios-book-outline"></i>
+                    注册（律师）
+                </a>
+
+                <a class="item" menu-close ui-sref="personalCenter">
+                    <i class="ion ion-ios-person"></i>
+                    个人中心（用户）
+                </a>
+
+                <a class="item" menu-close ui-sref="lawyerCenter">
+                    <i class="ion ion-university"></i>
+                    个人中心（律师）
+                </a>
+                <a class="item" menu-close ui-sref="personalCenter">
+                    <i class="ion ion-android-calendar"></i>
+                    委托代办（律师）
+                </a>
+            </div>
+
+            <div class="bar bar-footer bar-balanced">
+                <div class="h6 title">客服电话：13012345132</div>
+            </div>
+        </ion-side-menu>
+    </ion-side-menus>
+</ion-content>
+
+
+</body>
+</html>
