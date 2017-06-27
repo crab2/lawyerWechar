@@ -4,6 +4,7 @@
     angular.module('lawOnline', ['ionic'])
         .controller('MyCtrl', function($scope,$ionicSideMenuDelegate) {
                 $scope.toggleRight = function() {
+                    console.log($ionicSideMenuDelegate)
                     $ionicSideMenuDelegate.toggleRight();
                 };
         })
@@ -144,7 +145,11 @@
 
 // 律师中心
 //关于平台
-    .controller('lawyerInfo', function($scope,$ionicModal) {
-
-
+    .controller('pastCase', function($scope,$ionicModal) {
+        $ionicModal.fromTemplateUrl('lawyer-center/pastCase/detalis.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function(modal) {
+            $scope.detailsmodal = modal;
+        });
     })

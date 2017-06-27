@@ -3,11 +3,25 @@
  */
 var ionicapp = angular.module('lawOnline')
 ionicapp.config(function ($stateProvider, $urlRouterProvider) {
+    // $urlRouterProvider.otherwise('/');
     $stateProvider
     // 个人中心（个人）
         .state('personalCenter', {
-            url: '/personalCenter',
-            templateUrl: 'personal-center/personal-center.html'
+            views: {
+                'main': {
+                    url: '/personalCenter',
+                    template: '<ion-nav-view name="pc"></ion-nav-view>',
+                    abstract:true
+                }
+            }
+        })
+        .state('personalCenter.centerList', {
+            views: {
+                'pc': {
+                    url: '/centerList',
+                    templateUrl: 'personal-center/personal-center.html',
+                }
+            }
         })
         // 登录（个人）
         .state('personalCenter.personalLogin', {
@@ -89,18 +103,37 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-    // 个人中心律师
+
+
+
+    // 个人中心
+        //
+        // 律师
         .state('lawyerCenter', {
-            url: '/lawyerCenter',
-            templateUrl: 'lawyer-center/lawyer-center.html'
+            views: {
+                'main': {
+                    url: '/lawyerCenter',
+                    templateUrl: 'lawyer-center/lawyer-center.html'
+                }
+            }
         })
-        // 我的资料（个人）
+        // 我的资料（律师）
         .state('lawyerCenter.myInfo', {
             views: {
                 'lc': {
                     url: '/myInfo',
                     templateUrl: 'lawyer-center/my-information/my-information.html',
-                    controller:'lawyerInfo'
+                    // controller:'lawyerInfo'
+                }
+            }
+        })
+        // 过往案例（律师）
+        .state('lawyerCenter.pastCase', {
+            views: {
+                'lc': {
+                    url: '/pastCase',
+                    templateUrl: 'lawyer-center/pastCase/pastCase.html',
+                    controller:'pastCase'
                 }
             }
         })

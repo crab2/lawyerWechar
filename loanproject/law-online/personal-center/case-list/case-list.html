@@ -1,6 +1,11 @@
-
-<ion-tabs class="tabs-default tabs-icon-only" >
-    <ion-tab title="全部"  >
+<ion-view view-title="我的订单">
+    <ion-content>
+        <div class="button-bar">
+            <a class="button">全部</a>
+            <a class="button">待付款</a>
+            <a class="button">待处理</a>
+            <a class="button">已完成</a>
+        </div>
         <div>
             <div class="card">
                 <div class="item item-divider">
@@ -25,30 +30,19 @@
                 </div>
             </div>
         </div>
-    </ion-tab>
 
-    <ion-tab title="待付款"  >
-        <!-- 标签 2 内容 -->
-    </ion-tab>
+    </ion-content>
+    <div class="bar bar-footer">
+        <!--<button class="button button-clear">Left</button>-->
+        <div class="title" ng-click="releasemodal.show()">发布案件</div>
+        <!--<button class="button button-clear">Right</button>-->
+    </div>
 
-    <ion-tab title="待处理"  >
-        <!-- 标签 3 内容 -->
-    </ion-tab>
 
-    <ion-tab title="已完成"  >
-        <!-- 标签 3 内容 -->
-    </ion-tab>
+    <ion-footer-bar align-title="center" class="bar-balanced">
+        <div class="title" ng-click="releasemodal.show()">
+            发布案件
+        </div>
+    </ion-footer-bar>
 
-</ion-tabs>
-<div class="bar bar-footer">
-    <!--<button class="button button-clear">Left</button>-->
-    <div class="title" ng-click="releasemodal.show()">发布案件</div>
-    <!--<button class="button button-clear">Right</button>-->
-</div>
-
-<style>
-    .tab-nav{
-        top:auto !important;
-        bottom: 43px !important;
-    }
-</style>
+</ion-view>
