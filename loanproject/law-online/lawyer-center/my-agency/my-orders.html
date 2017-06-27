@@ -1,9 +1,8 @@
-<ion-view view-title="我的订单">
+<ion-view view-title="我的代办">
     <ion-content>
         <div class="button-bar">
-            <a class="button">全部</a>
-            <a class="button">待处理</a>
-            <a class="button">已完成</a>
+            <a class="button">发布的代办</a>
+            <a class="button">应征的代办</a>
         </div>
         <div>
             <div class="card">
@@ -24,7 +23,7 @@
                             </div>-->
                 <div class="item item-divider text-right">
                     <button class="button button-small button-positive"  ng-click="modal.show()">立即付款</button>
-                    <button class="button button-small button-calm"  ng-click="rewardDetials.show()">查看详情</button>
+                    <button class="button button-small button-calm"  ng-click="agencyDetials.show()">查看详情</button>
                     <button class="button button-small button-assertive">取消订单</button>
                 </div>
             </div>
@@ -46,24 +45,22 @@
                             </div>-->
                 <div class="item item-divider text-right">
                     <button class="button button-small button-positive"  ng-click="modal.show()">立即付款</button>
-                    <button class="button button-small button-calm"  ng-click="rewardDetials.show()">查看详情</button>
+                    <button class="button button-small button-calm"  ng-click="agencyDetials.show()">查看详情</button>
                     <button class="button button-small button-assertive">取消订单</button>
                 </div>
             </div>
             <div class="padding">
-                <p>*test details modal when developed clear it</p>
-                <button class="button button-small button-calm"  ng-click="rewardDetials.show()">打赏咨询详情</button>
-                <button class="button button-small button-calm"  ng-click="phoneDetials.show()">电话订单详情</button>
-                <button class="button button-small button-calm"  ng-click="meetingDetials.show()">会见订单详情</button>
-                <button class="button button-small button-calm"  ng-click="lawyerWitnessDetials.show()">律师见证订单详情</button>
-                <button class="button button-small button-calm"  ng-click="lawyerMediationDetials.show()">律师调解订单详情</button>
-                <button class="button button-small button-calm"  ng-click="lawyerletterDetials.show()">律师函订单详情</button>
-                <button class="button button-small button-calm"  ng-click="examinationDetials.show()">合同审查订单详情</button>
-                <button class="button button-small button-calm"  ng-click="draftDetials.show()">起草合同订单详情</button>
-                <button class="button button-small button-calm"  ng-click="downloadDetials.show()">下载合同订单详情</button>
+                应征代办详情的测试按钮
+                <button class="button button-small button-assertive" ng-click="foragencyDetials.show()">应征代办</button>
 
             </div>
+
         </div>
     </ion-content>
+    <div class="bar bar-footer stable-bg">
+        <!--<button class="button button-clear">Left</button>-->
+        <div class="title" ng-click="postagency.show()">发布代办</div>
+        <!--<button class="button button-clear">Right</button>-->
+    </div>
 
 </ion-view>

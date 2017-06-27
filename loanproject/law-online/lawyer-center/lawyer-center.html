@@ -1,51 +1,52 @@
-<div ui-view="lc">
-    <div class="text-center">
-        <img src="http://pic.ffpic.com/files/2012/1115/sj1113fun03.jpg" alt="" class="user-headportrait">
-        <p>18951629305</p>
-    </div>
-    <hr>
-    <div class="list list-inset">
-
-        <div class="item" ui-sref="lawyerCenter.myInfo">
-            <i class="ion ion-ios-home"></i>
-            我的资料
+<ion-view view-title="律师个人中心">
+    <ion-content>
+        <div class="text-center">
+            <img src="http://pic.ffpic.com/files/2012/1115/sj1113fun03.jpg" alt="" class="user-headportrait">
+            <p>18951629305</p>
         </div>
+        <hr>
+        <div class="list list-inset">
 
-        <div class="item" ui-sref="lawyerCenter.pastCase">
-            <i class="ion ion-help-circled"></i>
-            过往案例
+            <div class="item" ui-sref="lawyerCenter.myInfo">
+                <i class="ion ion-ios-home"></i>
+                我的资料
+            </div>
+
+            <div class="item" ui-sref="lawyerCenter.pastCase">
+                <i class="ion ion-help-circled"></i>
+                过往案例
+            </div>
+
+            <div class="item" ui-sref="lawyerCenter.lawyerOrders">
+                <i class="ion ion-document-text"></i>
+                我的订单
+            </div>
+
+            <div class="item" ui-sref="lawyerCenter.myWallet">
+                <i class="ion ion-card"></i>
+                我的钱包
+            </div>
+
+            <div class="item" ui-sref="lawyerCenter.caseList">
+                <i class="ion ion-briefcase"></i>
+                我的案件
+            </div>
+
+            <div class="item" ui-sref="lawyerCenter.lawyerAgency">
+                <i class="ion ion-calendar" ></i>
+                我的代办
+            </div>
+
+            <div class="item" ui-sref="lawyerCenter.aboutPlatform">
+                <i class="ion ion-information-circled"></i>
+                关于平台
+            </div>
+            <div class="item" ui-sref="lawyerCenter.setting">
+                <i class="ion ion-gear-b"></i>
+                设置
+            </div>
+
         </div>
-
-        <div class="item" ui-sref="lawyerCenter.myOrders">
-            <i class="ion ion-document-text"></i>
-            我的订单
-        </div>
-
-        <div class="item" ui-sref="lawyerCenter.caseList">
-            <i class="ion ion-ios-redo"></i>
-            我的钱包
-        </div>
-
-        <div class="item" ui-sref="lawyerCenter.caseList">
-            <i class="ion ion-ios-redo"></i>
-            我的案件
-        </div>
-
-        <div class="item" ui-sref="lawyerCenter.aboutPlatform">
-            <i class="ion ion-calendar" ></i>
-            我的代办
-        </div>
-
-        <div class="item" ui-sref="lawyerCenter.aboutPlatform">
-            <i class="ion ion-gear-b"></i>
-            关于平台
-        </div>
-        <div class="item" ui-sref="lawyerCenter.setting">
-            <i class="ion ion-gear-b"></i>
-            设置
-        </div>
-
-    </div>
-    <link rel="stylesheet" href="lawyer-center/lawyer-center.css">
-
-</div>
+        <link rel="stylesheet" href="lawyer-center/lawyer-center.css">
+    </ion-content>
+</ion-view>

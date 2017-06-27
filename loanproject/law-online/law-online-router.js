@@ -15,6 +15,7 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        // 个人中心列表
         .state('personalCenter.centerList', {
             views: {
                 'pc': {
@@ -93,7 +94,7 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-        // 关于平台（个人）
+        // 设置（个人）
         .state('personalCenter.setting', {
             views: {
                 'pc': {
@@ -113,7 +114,17 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 'main': {
                     url: '/lawyerCenter',
-                    templateUrl: 'lawyer-center/lawyer-center.html'
+                    template: '<ion-nav-view name="lc"></ion-nav-view>',
+                    abstract:true
+                }
+            }
+        })
+        // 我的个人中心（律师）
+        .state('lawyerCenter.centerList', {
+            views: {
+                'lc': {
+                    url: '/centerList',
+                    templateUrl: 'lawyer-center/lawyer-center.html',
                 }
             }
         })
@@ -134,6 +145,65 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
                     url: '/pastCase',
                     templateUrl: 'lawyer-center/pastCase/pastCase.html',
                     controller:'pastCase'
+                }
+            }
+        })
+        // 我的订单（律师）
+        .state('lawyerCenter.lawyerOrders', {
+            views: {
+                'lc': {
+                    url: '/pastCase',
+                    templateUrl: 'lawyer-center/my-orders/my-orders.html',
+                    controller:'lawyerOrders'
+                }
+            }
+        })
+        // 我的钱包（律师）
+        .state('lawyerCenter.myWallet', {
+            views: {
+                'lc': {
+                    url: '/myWallet',
+                    templateUrl: 'lawyer-center/my-wallet/my-wallet.html',
+                    controller:'myWallet'
+                }
+            }
+        })
+        .state('lawyerCenter.caseList', {
+            views: {
+                'lc': {
+                    url: '/caseList',
+                    templateUrl: 'lawyer-center/case-list/case-list.html',
+                    controller: 'lawyerCaseList'
+                }
+            }
+        })
+        // 我的代办（律师）
+        .state('lawyerCenter.lawyerAgency', {
+            views: {
+                'lc': {
+                    url: '/lawyerAgency',
+                    templateUrl: 'lawyer-center/my-agency/my-orders.html',
+                    controller:'lawyerAgency'
+                }
+            }
+        })
+        // 关于平台（律师）
+        .state('lawyerCenter.aboutPlatform', {
+            views: {
+                'lc': {
+                    url: '/aboutPlatform',
+                    templateUrl: 'personal-center/about-platform/about-platform.html',
+                    controller: 'lawyerAboutPlatform'
+                }
+            }
+        })
+        // 设置（律师）
+        .state('lawyerCenter.setting', {
+            views: {
+                'lc': {
+                    url: '/setting',
+                    templateUrl: 'lawyer-center/setting/setting.html',
+                    // controller:'personalSetting'
                 }
             }
         })

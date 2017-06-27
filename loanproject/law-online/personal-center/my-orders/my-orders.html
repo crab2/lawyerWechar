@@ -15,9 +15,10 @@
                 <a class="item item-avatar" href="#">
                     <img src="http://pic.ffpic.com/files/2012/1115/sj1113fun03.jpg">
                     <h2>张文哲律师</h2>
-                    <p>订单类型：打赏咨询</p>
                     <p>订单编号：14554871544</p>
                     <p>时间：2017-05-13</p>
+                    <hr class="stable">
+                    <p style="line-height: 30px">订单类型：<button class="button-outline button-positive button button-small">打赏咨询</button></p>
                 </a>
                 <!--            <div class="item item-text-wrap">
                                 This is a basic Card with some text.
@@ -36,19 +37,43 @@
                 <a class="item item-avatar" href="#">
                     <img src="http://pic.ffpic.com/files/2012/1115/sj1113fun03.jpg">
                     <h2>张文哲律师</h2>
-                    <p>订单类型：打赏咨询</p>
                     <p>订单编号：14554871544</p>
                     <p>时间：2017-05-13</p>
+                    <hr class="stable">
+                    <p style="line-height: 30px">订单类型：<button class="button-outline button-positive button button-small">打赏咨询</button></p>
                 </a>
                 <!--            <div class="item item-text-wrap">
                                 This is a basic Card with some text.
                             </div>-->
                 <div class="item item-divider text-right">
-                    <button class="button button-small button-positive">立即付款</button>
-                    <button class="button button-small button-calm">查看详情</button>
+                    <button class="button button-small button-positive"  ng-click="modal.show()">立即付款</button>
+                    <button class="button button-small button-calm"  ng-click="rewardDetials.show()">查看详情</button>
                     <button class="button button-small button-assertive">取消订单</button>
                 </div>
             </div>
+            <div class="card">
+                <div class="item item-divider">
+                    待付款
+                    <span style="float:right;">780元</span>
+                </div>
+                <a class="item item-avatar" href="#">
+                    <img src="http://pic.ffpic.com/files/2012/1115/sj1113fun03.jpg">
+                    <h2>张文哲律师</h2>
+                    <p>订单编号：14554871544</p>
+                    <p>时间：2017-05-13</p>
+                    <hr class="stable">
+                    <p style="line-height: 30px">订单类型：<button class="button-outline button-positive button button-small">打赏咨询</button></p>
+                </a>
+                <!--            <div class="item item-text-wrap">
+                                This is a basic Card with some text.
+                            </div>-->
+                <div class="item item-divider text-right">
+                    <button class="button button-small button-positive"  ng-click="modal.show()">立即付款</button>
+                    <button class="button button-small button-calm"  ng-click="rewardDetials.show()">查看详情</button>
+                    <button class="button button-small button-assertive">取消订单</button>
+                </div>
+            </div>
+
             <div class="padding">
                 <p>*test details modal when developed clear it</p>
                 <button class="button button-small button-calm"  ng-click="rewardDetials.show()">打赏咨询详情</button>
