@@ -227,8 +227,62 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 'consult': {
                     templateUrl: 'consult/consult.html',
+                    controller:'consultIndex'
                 }
             }
         })
+        // 律师详情
+        .state('consult.details', {
+            url: '/index/:id',
+            views: {
+                'consult': {
+                    templateUrl: 'consult/consult-details/consult-details.html',
+                    controller:'consultDetails'
+                }
+            }
+        })
+        // 过往案例列表
+        .state('consult.pastCaseList', {
+            url: '/pastCaseList/:id',
+            views: {
+                'consult': {
+                    templateUrl: 'consult/past-case-list/past-case-list.html',
+                    controller:'pastCaseList'
+                }
+            }
+        })
+    // 预约咨询模块结束
 
+
+    // 精选分享
+
+        .state('share', {
+            url: '/share',
+            views: {
+                'main': {
+                    templateUrl: 'share/share-index.html',
+                    abstract: true
+                }
+            }
+        })
+        // 日常法典
+        .state('share.daily', {
+            url: '/daily',
+            views: {
+                'share': {
+                    templateUrl: 'share/daily/daily.html',
+                    controller:'daily'
+                }
+            }
+        })
+        // 法据观点
+        .state('share.lawyerViewPoint', {
+            url: '/lawyerViewPoint',
+            views: {
+                'share': {
+                    templateUrl: 'share/lawyer-viewpoint/lawyer-viewpoint.html',
+                    controller:'lawyerViewPoint'
+                }
+            }
+        })
 });

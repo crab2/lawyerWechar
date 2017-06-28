@@ -1,0 +1,108 @@
+<ion-view view-title="律师详情">
+    <ion-content>
+        <div class="banner">
+            <img src="http://pic.ffpic.com/files/2012/1115/sj1113fun03.jpg" alt="" class="user-headportrait"
+                 style="height: 150px;width: 100%">
+            <h3 class="text-center">王老汉律师</h3>
+            <div  class="energized" style="top: 9px;position: absolute;right: 12px;">
+                <i class="ion ion-ios-star"></i>
+                <i class="ion ion-ios-star"></i>
+                <i class="ion ion-ios-star"></i>
+                <i class="ion ion-ios-star-half"></i>
+                <i class="ion ion-ios-star-outline"></i>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <p>执照号：21545154561651</p>
+
+            </div>
+            <div class="item">
+                <p>擅长领域：离婚，再婚</p>
+
+            </div>
+            <div class="buttons row">
+                <div class="col">
+                    <button class="button button-block button-positive button-small" ng-click="rewardconsultmodal.show()">
+                        <i class="ion ion-chatbubble-working"></i>
+                        打赏咨询
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="button button-block button-positive button-small" ng-click="phoneconsultmodal.show()">
+                        <i class="ion ion-ios-telephone"></i>
+                        电话咨询
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="button button-block button-positive button-small" ng-click="meetingmodal.show()">
+                        <i class="ion ion-person-stalker"></i>
+                        预约会面
+                    </button>
+                </div>
+
+            </div>
+            <div class="list ">
+                <div class="item item-divider">
+                    我的简介
+                </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        這裏是簡介的描述信息這裏是簡介的描述信息
+                        這裏是簡介的描述信息
+                        這裏是簡介的描述信息這裏是簡介的描述信息
+                    </p>
+                </div>
+                <div class="item item-divider">
+                    我的位置
+                </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        广东省-广州市-江宁区
+                    </p>
+                </div>
+                <div class="item item-divider">
+                    过往案例
+                    <span style="float:right;" ui-sref="consult.pastCaseList({id:'test'})">
+                        更多
+                    </span>
+                </div>
+                <a class="item  item-text-wrap" ng-click="pastcasemodal.show()">
+                    <p>
+                        这里是描述信息
+                        <span class="item-note">
+                            详细
+                        </span>
+                    </p>
+
+                </a>
+                <a class="item  item-text-wrap" ng-click="pastcasemodal.show()">
+                    <p>
+                        这里是描述信息
+                        <span class="item-note">
+                            详细
+                        </span>
+                    </p>
+
+                </a>
+                <a class="item  item-text-wrap" ng-click="pastcasemodal.show()">
+                    <p>
+                        这里是描述信息
+                        <span class="item-note">
+                            详细
+                        </span>
+                    </p>
+                </a>
+            </div>
+
+        </div>
+
+
+    </ion-content>
+    <style>
+        .banner{
+            width: 150px;
+            margin: auto;
+        }
+    </style>
+</ion-view>

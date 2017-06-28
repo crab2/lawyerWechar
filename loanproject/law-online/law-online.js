@@ -310,3 +310,151 @@ angular.module('lawOnline', ['ionic'])
             $scope.aboutPlatformmodal = modal;
         });
     })
+
+
+    // 中心页面结束
+
+
+    // 咨询模块
+    // 咨询模块详情
+    .controller('consultIndex', function ($scope, $ionicModal,$stateParams,$state) {
+
+        // 使用向导
+        // 接收参数你可以
+        console.log($stateParams.id)
+
+        // 过往案例详情
+        $ionicModal.fromTemplateUrl('consult/consult-details/detalis.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.pastcasemodal = modal;
+        });
+        // 打赏咨询modal
+        $ionicModal.fromTemplateUrl('consult/reward-consult.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.rewardconsultmodal = modal;
+        });
+        // 电话咨询modal
+        $ionicModal.fromTemplateUrl('consult/phone-consult.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.phoneconsultmodal = modal;
+        });
+        // meeting咨询modal
+        $ionicModal.fromTemplateUrl('consult/apointment-meeting.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.meetingmodal = modal;
+        });
+        // 用户评价modal
+        $ionicModal.fromTemplateUrl('consult/user-rating.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.userratingmodal = modal;
+        });
+        // 提交用户评价modal
+        $ionicModal.fromTemplateUrl('consult/post-rating.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.postratingmodal = modal;
+        });
+    })
+    // 咨询模块详情
+    .controller('consultDetails', function ($scope, $ionicModal,$stateParams,$state) {
+
+        // 使用向导
+        // 接收参数你可以
+        console.log($stateParams.id)
+        // 过往案例详情
+        $ionicModal.fromTemplateUrl('consult/consult-details/detalis.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.pastcasemodal = modal;
+        });
+        // 打赏咨询modal
+        $ionicModal.fromTemplateUrl('consult/reward-consult.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.rewardconsultmodal = modal;
+        });
+        // 电话咨询modal
+        $ionicModal.fromTemplateUrl('consult/phone-consult.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.phoneconsultmodal = modal;
+        });
+        // meeting咨询modal
+        $ionicModal.fromTemplateUrl('consult/apointment-meeting.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.meetingmodal = modal;
+        });
+
+    })
+    // 过往案例列表
+    .controller('pastCaseList', function ($scope, $ionicModal,$stateParams,$state) {
+
+        // 使用向导
+        // 接收参数你可以
+        console.log($stateParams.id)
+        // 详情modal
+        $ionicModal.fromTemplateUrl('consult/consult-details/detalis.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.pastcasemodal = modal;
+        });
+
+
+    })
+
+
+// 日常法典
+    .controller('daily', function ($scope, $ionicModal) {
+
+        // 使用向导
+        // 接收参数你可以
+        // 详情modal
+        // 偷看答案
+        $ionicModal.fromTemplateUrl('share/daily/check-answer.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.checkanswermodal = modal;
+        });
+
+
+    })
+    // 法聚观点
+    .controller('lawyerViewPoint', function ($scope, $ionicModal) {
+
+        // 使用向导
+        // 接收参数你可以
+        // 详情modal
+        // 偷看答案
+        $ionicModal.fromTemplateUrl('share/lawyer-viewpoint/list.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.listmodal = modal;
+        });
+        $ionicModal.fromTemplateUrl('share/lawyer-viewpoint/report.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.reportmodal = modal;
+        });
+
+
+    })

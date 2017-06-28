@@ -1,0 +1,153 @@
+
+<div class="modal">
+    <ion-header-bar align-title="left" class="bar-positive">
+        <h1 class="title">预约会面</h1>
+        <div class="buttons">
+            <button class="button" ng-click="meetingmodal.hide()">关闭</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+
+        <div class="row text-center">
+            <div class="col">
+                <div class="circular assertive-bg">
+                    1
+                </div>
+                填写资料
+            </div>
+            <div class="col">
+                <i class=" ion ion-arrow-right-a right-arrow positive"></i>
+            </div>
+            <div class="col">
+                <div class="circular assertive-bg">
+                    2
+                </div>
+                支付金额
+            </div>
+            <div class="col">
+                <i class=" ion ion-arrow-right-a right-arrow positive"></i>
+            </div>
+            <div class="col">
+                <div class="circular assertive-bg">
+                    3
+                </div>
+                律师联系
+            </div>
+            <div class="col">
+                <i class=" ion ion-arrow-right-a right-arrow positive"></i>
+            </div>
+            <div class="col">
+                <div class="circular assertive-bg">
+                    4
+                </div>
+                律师会面
+            </div>
+
+        </div>
+        <div class="banner" style="position: relative;">
+            <img src="http://pic.ffpic.com/files/2012/1115/sj1113fun03.jpg" alt="" class="user-headportrait"
+                 style="height: 150px;width: 100%">
+            <h3 class="text-center">王老汉律师</h3>
+
+            <div  class="energized" style="top: 9px;position: absolute;right: -120px;">
+                <i class="ion ion-ios-star"></i>
+                <i class="ion ion-ios-star"></i>
+                <i class="ion ion-ios-star"></i>
+                <i class="ion ion-ios-star-half"></i>
+                <i class="ion ion-ios-star-outline"></i>
+            </div>
+
+        </div>
+        <div class="list">
+
+            <label class="item item-input">
+                <span class="input-label">联系人：</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">联系电话：</span>
+                <input type="number">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">身份证号：</span>
+                <input type="text">
+            </label>
+
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">预约事件描述：</span>
+                <textarea rows="5" placeholder="请详细描述您要预约的事务内容"></textarea>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">预约时间：</span>
+                <input type="date">
+            </label>
+            <div class="item item-divider">
+                地区选择
+            </div>
+            <div class="item item-select">
+                <div class="row">
+                    <div class="col">
+                        省
+                        <select>
+                            <option value="1">江苏</option>
+                            <option value="1">jiangsu</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col item-select">
+                        市
+                        <select>
+                            <option value="1">南京市</option>
+                            <option value="1">jiangsu</option>
+                        </select>
+                    </div>
+                    <div class="col item-select">
+                        区
+                        <select>
+                            <option value="1">江宁区</option>
+                            <option value="1">jiangsu</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <label class="item item-input">
+                <input type="text" placeholder="详细地址">
+            </label>
+            <div class="item">
+                打赏金额：300元/次
+            </div>
+
+            <div class="padding">
+                <button class="button button-small button-positive button-block">
+                    确认提交
+                </button>
+                <p>温馨提示：如您预约的时间与律师时间不对称，律师将重新与您约时间。</p>
+            </div>
+        </div>
+
+        <!--        <ion-footer-bar align-title="left" class="">
+                    <h1 class="title">联系客服 800820461</h1>
+                </ion-footer-bar>-->
+
+    </ion-content>
+</div>
+<style>
+    .circular{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+    .right-arrow{
+        font-size: 2.5rem;
+    }
+</style>
