@@ -3,32 +3,32 @@
  */
 var ionicapp = angular.module('lawOnline')
 ionicapp.config(function ($stateProvider, $urlRouterProvider) {
-    // $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
     $stateProvider
     // 个人中心（个人）
         .state('personalCenter', {
+            url: '/personalCenter',
             views: {
                 'main': {
-                    url: '/personalCenter',
                     template: '<ion-nav-view name="pc"></ion-nav-view>',
-                    abstract:true
+                    abstract: true
                 }
             }
         })
         // 个人中心列表
         .state('personalCenter.centerList', {
+            url: '/centerList',
             views: {
                 'pc': {
-                    url: '/centerList',
                     templateUrl: 'personal-center/personal-center.html',
                 }
             }
         })
         // 登录（个人）
         .state('personalCenter.personalLogin', {
+            url: '/personalLogin',
             views: {
                 'pc': {
-                    url: '/personalLogin',
                     templateUrl: 'personal-center/personallogin/personal-login.html',
                     controller: 'personalLogin'
                 }
@@ -36,9 +36,9 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 注册（个人）
         .state('personalCenter.personalRegist', {
+            url: '/personalRegist',
             views: {
                 'pc': {
-                    url: '/personalRegist',
                     templateUrl: 'personal-center/personalregist/personalregist.html',
                     // controller:'personalRegist'
                 }
@@ -46,9 +46,9 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 我的资料（个人）
         .state('personalCenter.myInfo', {
+            url: '/myInfo',
             views: {
                 'pc': {
-                    url: '/myInfo',
                     templateUrl: 'personal-center/my-information/my-information.html',
                     // controller:'myInfo'
                 }
@@ -56,9 +56,9 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 我听过的问题（个人）
         .state('personalCenter.heardIssue', {
+            url: '/heardIssue',
             views: {
                 'pc': {
-                    url: '/heardIssue',
                     templateUrl: 'personal-center/heard-issue/heard-issue.html',
                     controller: 'heardIssue'
                 }
@@ -66,9 +66,9 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 我的订单（个人）
         .state('personalCenter.myOrders', {
+            url: '/myOrders',
             views: {
                 'pc': {
-                    url: '/myOrders',
                     templateUrl: 'personal-center/my-orders/my-orders.html',
                     controller: 'myOrders'
                 }
@@ -76,9 +76,9 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 案件列表（个人）
         .state('personalCenter.caseList', {
+            url: '/caseList',
             views: {
                 'pc': {
-                    url: '/caseList',
                     templateUrl: 'personal-center/case-list/case-list.html',
                     controller: 'caseList'
                 }
@@ -86,9 +86,9 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 关于平台（个人）
         .state('personalCenter.aboutPlatform', {
+            url: '/aboutPlatform',
             views: {
                 'pc': {
-                    url: '/aboutPlatform',
                     templateUrl: 'personal-center/about-platform/about-platform.html',
                     controller: 'aboutPlatform'
                 }
@@ -96,9 +96,9 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 设置（个人）
         .state('personalCenter.setting', {
+            url: '/setting',
             views: {
                 'pc': {
-                    url: '/setting',
                     templateUrl: 'personal-center/setting/setting.html',
                     // controller:'personalSetting'
                 }
@@ -107,32 +107,32 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
 
 
 
-    // 个人中心
+        // 个人中心
         //
         // 律师
         .state('lawyerCenter', {
+            url: '/lawyerCenter',
             views: {
                 'main': {
-                    url: '/lawyerCenter',
                     template: '<ion-nav-view name="lc"></ion-nav-view>',
-                    abstract:true
+                    abstract: true
                 }
             }
         })
         // 我的个人中心（律师）
         .state('lawyerCenter.centerList', {
+            url: '/centerList',
             views: {
                 'lc': {
-                    url: '/centerList',
                     templateUrl: 'lawyer-center/lawyer-center.html',
                 }
             }
         })
         // 我的资料（律师）
         .state('lawyerCenter.myInfo', {
+            url: '/myInfo',
             views: {
                 'lc': {
-                    url: '/myInfo',
                     templateUrl: 'lawyer-center/my-information/my-information.html',
                     // controller:'lawyerInfo'
                 }
@@ -140,38 +140,38 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 过往案例（律师）
         .state('lawyerCenter.pastCase', {
+            url: '/pastCase',
             views: {
                 'lc': {
-                    url: '/pastCase',
                     templateUrl: 'lawyer-center/pastCase/pastCase.html',
-                    controller:'pastCase'
+                    controller: 'pastCase'
                 }
             }
         })
         // 我的订单（律师）
         .state('lawyerCenter.lawyerOrders', {
+            url: '/pastCase',
             views: {
                 'lc': {
-                    url: '/pastCase',
                     templateUrl: 'lawyer-center/my-orders/my-orders.html',
-                    controller:'lawyerOrders'
+                    controller: 'lawyerOrders'
                 }
             }
         })
         // 我的钱包（律师）
         .state('lawyerCenter.myWallet', {
+            url: '/myWallet',
             views: {
                 'lc': {
-                    url: '/myWallet',
                     templateUrl: 'lawyer-center/my-wallet/my-wallet.html',
-                    controller:'myWallet'
+                    controller: 'myWallet'
                 }
             }
         })
         .state('lawyerCenter.caseList', {
+            url: '/caseList',
             views: {
                 'lc': {
-                    url: '/caseList',
                     templateUrl: 'lawyer-center/case-list/case-list.html',
                     controller: 'lawyerCaseList'
                 }
@@ -179,19 +179,19 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 我的代办（律师）
         .state('lawyerCenter.lawyerAgency', {
+            url: '/lawyerAgency',
             views: {
                 'lc': {
-                    url: '/lawyerAgency',
                     templateUrl: 'lawyer-center/my-agency/my-orders.html',
-                    controller:'lawyerAgency'
+                    controller: 'lawyerAgency'
                 }
             }
         })
         // 关于平台（律师）
         .state('lawyerCenter.aboutPlatform', {
+            url: '/aboutPlatform',
             views: {
                 'lc': {
-                    url: '/aboutPlatform',
                     templateUrl: 'personal-center/about-platform/about-platform.html',
                     controller: 'lawyerAboutPlatform'
                 }
@@ -199,12 +199,36 @@ ionicapp.config(function ($stateProvider, $urlRouterProvider) {
         })
         // 设置（律师）
         .state('lawyerCenter.setting', {
+            url: '/setting',
             views: {
                 'lc': {
-                    url: '/setting',
                     templateUrl: 'lawyer-center/setting/setting.html',
                     // controller:'personalSetting'
                 }
             }
         })
+
+        // 个人中心结束
+
+
+        // 预约咨询模块
+        .state('consult', {
+            url: '/consult',
+            views: {
+                'main': {
+                    template: '<ion-nav-view name="consult"></ion-nav-view>',
+                    abstract: true
+                }
+            }
+        })
+        // 预约咨询主页面
+        .state('consult.index', {
+            url: '/index',
+            views: {
+                'consult': {
+                    templateUrl: 'consult/consult.html',
+                }
+            }
+        })
+
 });
